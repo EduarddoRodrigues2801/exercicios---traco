@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 11</title>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="exercicio">
+            <h2>Exercício 11</h2>
+            <p>Fazer um programa para ler as duas notas que um aluno obteve no primeiro e segundo semestres de uma disciplina anual. Em seguida, mostrar a nota final que o aluno obteve (com uma casa decimal) no ano juntamente com um texto explicativo. Caso a nota final do aluno seja inferior a 60.00, mostrar a mensagem "REPROVADO", conforme exemplos.</p>
+            <form action="#"  name="frmexercicio1" id="frmexercicio1" method="post">
+                <label>
+                    <span>Digite a primeira Nota :</span>
+                    <input type="text" id="txtnota1" name="nota1" onchange="decimaisnota1()"  size="10"  placeholder="Primeira Nota">
+                </label>
+                <label>
+                    <span>Digite a Segunda Nota:</span>
+                    <input type="text" id="txtnota2" name="nota2" onchange="decimaisnota2()"  size="10"  placeholder="Segunda Nota">
+                </label>
+               
+                <input type="button" onclick="exercicio1()" value="Verificar">
+                <input type="button" onclick="novo()" value="Limpar">
+                <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

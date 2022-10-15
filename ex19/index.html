@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 19</title>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="exercicio">
+            <h2>Exercício 19</h2>
+            <p>Uma empresa vai conceder um aumento percentual de salário aos seus funcionários dependendo de quanto cada pessoa ganha, conforme tabela ao lado. Fazer um programa para ler o salário de uma pessoa, daí mostrar qual o novo salário dessa pessoa depois do aumento, quanto foi o aumento e qual foi a porcentagem de aumento.</p>
+            <form action="#"  name="frmexercicio1" id="frmexercicio1" method="post">
+               
+                <label>
+                    <span>Digite o salário Atual :</span>
+                    <input type="text" id="txtsalario" name="salario" onchange="decimaissalario()"  size="10"  placeholder="digite o salário atual">
+                </label>
+               
+                <input type="button" onclick="exercicio1()" value="Calcular">
+                <input type="button" onclick="novo()" value="Limpar">
+                <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

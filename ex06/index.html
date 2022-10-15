@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 6</title>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="exercicio">
+            <h2>Exercício 06</h2>
+            <p>Fazer um programa para ler o nome de um(a) funcionário(a), o valor que ele(a) recebe por hora, e a quantidade de horas trabalhadas por ele(a). Ao final, mostrar o valor do pagamento do funcionário com uma mensagem explicativa, conforme exemplo.</p>
+            <form action="#"  name="frmexercicio1" id="frmexercicio1" method="post">
+                <label>
+                    <span>Nome:</span>
+                    <input type="text" id="txtnome" name="nome"   size="10"   placeholder="Nome do funcionário">
+                </label>
+                <label>
+                    <span>Valor por Hora</span>:</span>
+                    <input type="text" id="txtvalor" name="valor" onchange="decimaisvalor()"  size="10"   placeholder="valor Hora">
+                </label>
+                <label>
+                    <span>Horas Trabalhadas</span>:</span>
+                    <input type="text" id="txthoras" name="horas"   size="10"   placeholder="Horas Trabalhadas">
+                </label>
+               
+                <input type="button" onclick="exercicio1()" value="Calcular">
+                <input type="button" onclick="novo()" value="Limpar">
+                <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

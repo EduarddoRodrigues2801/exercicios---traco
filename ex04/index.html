@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 4</title>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="exercicio">
+            <h2>Exercício 04</h2>
+            <p>Fazer um programa para calcular o troco no processo de pagamento de um produto de uma mercearia. O programa deve ler o preço unitário do produto, a quantidade de unidades compradas deste produto, e o valor em dinheiro dado pelo cliente (suponha que haja dinheiro suficiente). Seu programa deve mostrar o valor do troco a ser devolvido ao cliente.</p>
+            <form action="#"  name="frmexercicio1" id="frmexercicio1" method="post">
+                <label>
+                    <span>Preço Uni:</span>
+                    <input type="text" id="txtprecounit" name="precounit" onchange="decimaispreco()"  size="10"   placeholder="digite o preço unitário">
+                </label>
+                <label>
+                    <span>Quantidade:</span>
+                    <input type="text" id="txtqtde" name="qtde"   size="10" placeholder="digite a Quantidade">
+                </label>
+                <label>
+                    <span>valor Recebido:</span>
+                    <input type="text" id="txtvalorrecebido" name="valorecebido" onchange="decimaisvalor()"  size="10"   placeholder="valor recebido">
+                </label>
+            
+               
+                <input type="button" onclick="exercicio1()" value="Calcular">
+                <input type="button" onclick="novo()" value="Limpar">
+                <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

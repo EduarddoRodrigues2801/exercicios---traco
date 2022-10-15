@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 7</title>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="exercicio">
+            <h2>Exercício 07</h2>
+            <p>Fazer um programa para ler a distância total (em km) percorrida por um carro, bem como o total de combustível gasto por este carro ao percorrer tal distância. Seu programa deve mostrar o consumo médio do carro, com três casas decimais.</p>
+            <form action="#"  name="frmexercicio1" id="frmexercicio1" method="post">
+                <label>
+                    <span>Distância Percorrida:</span>
+                    <input type="text" id="txtdistancia" name="distancia"   size="10"   placeholder="distância percorrida">
+                </label>
+                <label>
+                    <span>Combustível gasto:</span>:</span>
+                    <input type="text" id="txtcombustivel" name="combustivel" onchange="decimaiscombustivel()"  size="10"   placeholder="Combustivel Gasto">
+                </label>
+              
+               
+                <input type="button" onclick="exercicio1()" value="Calcular">
+                <input type="button" onclick="novo()" value="Limpar">
+                <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

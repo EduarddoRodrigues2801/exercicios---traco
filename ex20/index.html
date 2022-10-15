@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 20</title>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="exercicio">
+            <h2>Exercício 20</h2>
+            <p>Escreva um programa que exiba a soma de todos os números compreendidos entre um intervalo dado pelo usuário.</p>
+            <form action="#"  name="frmexercicio1" id="frmexercicio1" method="post">
+               
+                <label>
+                    <span>Número Inicial:</span>
+                    <input type="text" id="txtinicio" name="inicio"  size="10"  placeholder="Número Inicial">
+                </label>
+                <label>
+                    <span>Número Final:</span>
+                    <input type="text" id="txtfinal" name="final"  size="10"  placeholder="Número Final">
+                </label>
+               
+                <input type="button" onclick="exercicio1()" value="Calcular">
+                <input type="button" onclick="novo()" value="Limpar">
+                <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

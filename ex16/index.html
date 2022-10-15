@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 16</title>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="exercicio">
+            <h2>Exercício 16</h2>
+            <p>No arremesso de dardo, o atleta tem três chances para lançar o dardo à
+                maior distância que conseguir. Você deve criar um programa para, dadas
+                as medidas das três tentativas de lançamento, informar qual foi a maior.</p>
+            <form action="#"  name="frmexercicio1" id="frmexercicio1" method="post">
+                <label>
+                    <span>Primeiro Valor:</span>
+                    <input type="text" id="txtprimeiro" name="primeiro"   size="10"  placeholder="Primeiro Valor">
+                </label>
+                <label>
+                    <span>Segundo Valor:</span>
+                    <input type="text" id="txtsegundo" name="segundo"   size="10"  placeholder="Segundo Valor">
+                </label>
+                <label>
+                    <span>Terceiro Valor:</span>
+                    <input type="text" id="txtterceiro" name="terceiro"   size="10"  placeholder="Terceiro Valor">
+                </label>
+                <input type="button" onclick="exercicio1()" value="Verificar">
+                <input type="button" onclick="novo()" value="Limpar">
+                <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

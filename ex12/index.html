@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 12</title>
+    
+</head>
+<body>
+    <div id="container">
+        <div id="exercicio">
+            <h2>Exercício 12</h2>
+            <p>Fazer um programa para ler os três coeficientes de uma equação do segundo grau. Usando a fórmula de Bhaskara, calcular e mostrar os valores das raízes x1 e x2 da equação com quatro casas decimais, conforme exemplos. Se a equação não possuir raízes reais, mostrar uma mensagem.</p>
+            <form action="#"  name="frmexercicio1" id="frmexercicio1" method="post">
+                <label>
+                    <span>coeficiente 1 :</span>
+                    <input type="text" id="txtcof1" name="cof1"  size="10"  placeholder="Coeficiente 1">
+                </label>
+                <label>
+                    <span>coeficiente 2:</span>
+                    <input type="text" id="txtcof2" name="cof2"   size="10"  placeholder="coeficiente 2">
+                </label>
+                <label>
+                    <span>Coeficiente 3:</span>
+                    <input type="text" id="txtcof3" name="cof3"   size="10"  placeholder="coeficiente 3">
+                </label>
+               
+                <input type="button" onclick="exercicio1()" value="Calcular">
+                <input type="button" onclick="novo()" value="Limpar">
+                <div id="resultado"><p id="conteudoresultado"></p></div>
+            </form>
+        </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
